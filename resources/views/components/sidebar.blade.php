@@ -33,7 +33,7 @@
     </div>
     <div class="flex items-center justify-center w-full h-16 mt-auto bg-primary ">
         <div class="w-full  border-white">
-            <h4 class="font-bold font-xl px-10 text-white"> &#169; Copyright 2022 | Joe Aqilla Vandyta</h4>
+            <h4 class="font-bold font-xl px-10 text-white"> &#169; Copyright 2022 | UAS SISTER</h4>
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="title">
-        Statistics | Dashboard
+        UAS | Dashboard
     </x-slot>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
@@ -8,7 +8,7 @@
         </h2>
     </x-slot>
     <div class="flex">
-        
+
         <main class="container mx-auto h-screen">
 
             <!-- Card row 2-->
@@ -28,13 +28,13 @@
                     </div>
                 </div>
                 <div class="flex-row w-full sm:flex-auto sm:w-5/12 rounded-2xl p-2">
-                    <div  class="bg-gradient-to-r from-primary to-sky-300  h-full rounded-2xl bg-center bg-cover b">   
+                    <div  class="bg-gradient-to-r from-primary to-sky-300  h-full rounded-2xl bg-center bg-cover b">
                         <div class="flex flex-row h-full p-6">
                             <div class="flex-none my-auto">
                                 <h2 class="text-slate-100 text-2xl font-semibold">Total Mahasiswa</h2>
                                 <p class="px-2 font-semibold text-slate-200 text-3xl">{{$totalStudent->count()}}</p>
                             </div>
-                            
+
                             <div class="md:px-3 my-auto ml-auto">
                                 <div class="flex w-14 h-14 sm:w-30 sm:h-20 lg:w-28 lg:h-28 text-center rounded-xl bg-gradient-to-tl from-primary to-second">
                                     <i class="text-7xl text-white m-auto uil uil-users-alt"></i>
@@ -45,13 +45,13 @@
                 </div>
             </div>
             <!-- EndCard row 2-->
-            
+
             <div class="p-2">
                 <div style="overflow-x:auto;" class=" rounded-lg">
                     <table class="min-w-full text-center">
                         <thead class="bg-primary">
                             <tr>
-                               
+
                                 <th scope="col"
                                     class="py-4 px-5 w-8 text-xs font-bold tracking-wider text-white uppercase ">
                                     No
@@ -77,11 +77,11 @@
                                 </th>
                             </tr>
                         </thead>
-                        
+
                         <tbody class=" bg-white divide-y divide-gray-200 ">
                             @foreach($student as $s)
                             <tr class="">
-                                
+
                                 <td class="py-4 w-8 text-sm font-medium text-black whitespace-nowrap">
                                     {{$s->id}}
                                 </td>
@@ -100,7 +100,7 @@
                                 <td class="py-4 px-6 text-sm font-medium text-black whitespace-nowrap">
                                     {{$s->kelas}}
                                 </td>
-                               
+
                             </tr>
                             @endforeach
                         </tbody>
